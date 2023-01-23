@@ -1,7 +1,7 @@
 import '../../css/colors.css';
 import '../../css/template.css';
 import '../../css/typograph.css';
-import logo from "./img/logo192.png"
+import logo from "../../img/logo.png"
 
 const Header = () => {
   return (

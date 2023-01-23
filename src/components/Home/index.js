@@ -1,11 +1,31 @@
-const Home = () => {
+import duzzk from "../../img/duzzk.png";
+import "../../css/template.css";
+import { TypeAnimation } from 'react-type-animation';
+import { useState } from "react";
+
+ 
+
+const Home = (props) => {
   return (
     <>
-    <div>
-      <h1>Eu sou o <span className="letterName">Eduardo</span></h1>
-      <p>Estou aprendendo REACT</p>
-    </div>
-    <div></div>
-    </> 
+      <div className="home">
+        <div className="homeApresentation">
+          <h1>Eu sou o <span><TypeAnimation
+      sequence={['Eduardo',1000,
+      "Duzzk",1000
+      ]}
+      wrapper="span"
+      cursor={true}
+      repeat={Infinity}
+      speed={1}
+    /></span>
+          </h1>
+          <p>{props.desc}</p>
+        </div>
+        <div className="imgHome"><img src={duzzk} alt="" /></div>
+      </div>
+    </>
   )
 }
+
+export default Home;
