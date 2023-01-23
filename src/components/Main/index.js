@@ -1,5 +1,4 @@
 import Home from "../Home";
-import Typical from "react";
 
 const Main = () => {
   return (

@@ -1,7 +1,6 @@
 import duzzk from "../../img/duzzk.png";
 import "../../css/template.css";
 import { TypeAnimation } from 'react-type-animation';
-import { useState } from "react";
 
  
 
