@@ -9,17 +9,18 @@ const Home = (props) => {
     <>
       <div className="home">
         <div className="homeApresentation">
-          <h1>Eu sou o <span><TypeAnimation
+          <h1 className="apresentationName">Eu sou o <TypeAnimation 
+            className="animatedName"
             sequence={['Eduardo', 1000,
               "Duzzk", 1000
             ]}
-            wrapper="span"
+            wrapper="div"
             cursor={true}
             repeat={Infinity}
             speed={1}
-          /></span>
+          />
           </h1>
-          <p>{props.desc}</p>
+          <p className="descApresentation">{props.desc}</p>
         </div>
         <div className="imgHome"><img src={duzzk} alt="" /></div>
       </div>
